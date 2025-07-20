@@ -1,4 +1,3 @@
-markdown
 # New Samba Share Setup Script
 
 This script automates the process of setting up a Samba share on Raspberry Pi OS (or any Debian-based Linux system). It installs Samba if it's missing, prompts for a user, directory, and share name, then configures everything so it's ready to use immediately.
