@@ -17,6 +17,8 @@ if ! command -v smbpasswd &> /dev/null; then
     sudo apt-get install -y samba-common-bin
 fi
 
+clear
+echo "Github repo: https://github.com/scottrax/New-Samba-Share.git"
 # Prompt for Samba username
 read -p "Enter the Samba username to create: " samba_user
 
@@ -77,4 +79,4 @@ else
     exit 1
 fi
 
-echo "[✔] Samba share '$share_name' is ready at: //$(hostname -I | awk '{print $1}')/$share_name"
+echo "[✔] Samba share '$share_name' is ready at: \\$(hostname -I | awk '{print $1}')\$share_name"
